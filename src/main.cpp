@@ -4,6 +4,12 @@
 #include <QTimer>
 
 int main(int argc, char* argv[]) {
+    /* This change means nothing. 
+    It's made for only one purpose, to make a new release
+    To test how github action works 
+    */
+
+
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
 
     QGuiApplication app(argc, argv);
