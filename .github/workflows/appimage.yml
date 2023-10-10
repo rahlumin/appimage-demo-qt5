@@ -18,6 +18,8 @@ jobs:
           sudo apt-add-repository universe
           sudo apt-get update
           sudo apt-get install -y qt5-default qtdeclarative5-dev cmake
+          sudo apt-get install squashfs-tools
+          which mksquashfs
       - name: configure
         run: cmake . -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
       - name: build
